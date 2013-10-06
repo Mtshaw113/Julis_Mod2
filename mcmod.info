@@ -1,0 +1,17 @@
+[
+{
+  "modid": "Juli",
+  "name": "Juli's Mod",
+  "description": "Happy Birthday Juli!",
+  "version": "alpha",
+  "mcversion": "1.6.2",
+  "logoFile": "",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Matt"],
+  "credits": "Ryan for some Ideas, Matt for actually making it, VSWE for help with making the mod",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
