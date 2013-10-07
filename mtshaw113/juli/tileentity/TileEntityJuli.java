@@ -39,10 +39,10 @@ import net.minecraft.tileentity.TileEntity;
                                     color, false);
                             FireworkHelper.spawnInWorld(
                                     worldObj,
-                                    xCoord + random.nextFloat() - 10
+                                    xCoord + random.nextFloat() - 5
                                             + random.nextInt(9),
                                     yCoord + random.nextFloat(),
-                                    zCoord - 10 + random.nextInt(9)
+                                    zCoord - 5 + random.nextInt(9)
                                             + random.nextFloat(), explosion,
                                     random.nextInt(2) + 1);
                         }

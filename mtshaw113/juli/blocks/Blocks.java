@@ -1,7 +1,6 @@
 package mtshaw113.juli.blocks;
 
 import mtshaw113.juli.items.ItemInfo;
-import mtshaw113.juli.items.ItemWand;
 import mtshaw113.juli.items.JuliIngot;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -33,7 +32,7 @@ public class Blocks
         plank = new Plank(BlockInfo.PLANK_ID, Material.wood);
         GameRegistry.registerBlock(plank, BlockInfo.PLANK_KEY);
         
-        birthday = new oreJuli(BlockInfo.BIRTHDAY_ID);
+        birthday = new BirthdayBlock(BlockInfo.BIRTHDAY_ID, Material.rock);
         GameRegistry.registerBlock(birthday, BlockInfo.BIRTHDAY_KEY);
         
 	}

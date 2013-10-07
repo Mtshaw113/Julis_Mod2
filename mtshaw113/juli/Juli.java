@@ -61,7 +61,7 @@ public class Juli {
     
     
     //Items
-    public static Item JuliIngot;
+    //public static Item JuliIngot;
     public static Item ItemWand;
 
     //Biome

@@ -33,17 +33,31 @@ public class BirthdayBlock extends BlockContainer {
     public boolean onBlockActivated(final World world, final int x,
             final int y, final int z, EntityPlayer par5EntityPlayer, int par6,
             float par7, float par8, float par9) {
-        if (!world.isRemote) {
-            if (world.getBlockTileEntity(x, y, z) != null) {
-                ((TileEntityJuli) world.getBlockTileEntity(x, y, z)).toggleState();
-            }
-        }
+        //if (!world.isRemote) {
+        //    if (world.getBlockTileEntity(x, y, z) != null) {
+        //        ((TileEntityJuli) world.getBlockTileEntity(x, y, z)).toggleState();
+        //    }
+     //   }
  
         return true;
     }
  
+    @Override
+    public void onNeighborBlockChange(World par1World, int x, int y, int z, int otherID)
+    {
+        if(par1World.isBlockIndirectlyGettingPowered(x, y, z))
+        {
+          if (!par1World.isRemote) {
+                if (par1World.getBlockTileEntity(x, y, z) != null) {
+                    ((TileEntityJuli) par1World.getBlockTileEntity(x, y, z)).toggleState();
+                }
+            }
+            }
+        }
     
- 
+    
+    
+    
     @Override
     public TileEntity createNewTileEntity(World world) {
         return new TileEntityJuli();
