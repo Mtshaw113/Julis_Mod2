@@ -17,8 +17,8 @@ public class GuiBirthdayBlock extends GuiContainer {
     public GuiBirthdayBlock(InventoryPlayer invPlayer, TileEntityJuli juli) {
         super(new ContainerBirthdayBlock(invPlayer, juli));
         
-        xSize = 1280;
-        ySize = 720;
+        xSize = 256;
+        ySize = 256;
     }
     
     private static final ResourceLocation texture  = new ResourceLocation("example", "textures/gui/machine.jpg");
