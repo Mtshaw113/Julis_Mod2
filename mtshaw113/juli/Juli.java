@@ -3,6 +3,7 @@ package mtshaw113.juli;
 import mtshaw113.juli.biome.BiomeGenJuli;
 import mtshaw113.juli.blocks.Blocks;
 import mtshaw113.juli.config.ConfigHandler;
+import mtshaw113.juli.interfaces.GuiHandler;
 import mtshaw113.juli.items.Items;
 import mtshaw113.juli.proxies.CommonProxy;
 import mtshaw113.juli.tileentity.TileEntityJuli;
@@ -43,7 +44,7 @@ public class Juli {
     	Items.init();
     	Blocks.init();
     	
-    	GameRegistry.registerTileEntity(TileEntityJuli.class, "tileEntityJuli");
+    	Blocks.registerTileEntities();
     	
     	proxy.initSounds();
     	proxy.initRenderers();
@@ -74,8 +75,6 @@ public class Juli {
     public static boolean plantsFlag = true;
     public static boolean skyColorFlag = false;
     public static boolean useOreGens = true;
-  
-
 
 public static CreativeTabs tabCustom = new CreativeTabs("tabCustom") {
 
@@ -88,7 +87,9 @@ public static CreativeTabs tabCustom = new CreativeTabs("tabCustom") {
     
     @EventHandler
     public void load(FMLInitializationEvent event) {            
-            GameRegistry.registerWorldGenerator(eventmanager);                        
+            GameRegistry.registerWorldGenerator(eventmanager);
+            
+            
 
             Items.addNames();
             Blocks.addNames();
@@ -102,7 +103,7 @@ public static CreativeTabs tabCustom = new CreativeTabs("tabCustom") {
             
             JuliBiome = (new BiomeGenJuli(30).setBiomeName("Juli's Biome").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.1F, 0.2F));
 
-            
+            new GuiHandler();
             
     }
 	

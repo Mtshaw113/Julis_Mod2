@@ -6,10 +6,14 @@ import java.util.Random;
 import mtshaw113.juli.fireworks.FireworkHelper;
 import mtshaw113.juli.fireworks.FireworkHelper.FireworkExplosion;
 import mtshaw113.juli.fireworks.FireworkHelper.FireworkType;
+import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 
-    public class TileEntityJuli extends TileEntity {
+    public class TileEntityJuli extends TileEntity{
      
         private int seconds;
         private int tick;
@@ -69,6 +73,15 @@ import net.minecraft.tileentity.TileEntity;
             super.readFromNBT(tagCompound);
             isActive = tagCompound.getBoolean("Active");
         }
+
+        public boolean isUseableByPlayer(EntityPlayer entityplayer) {
+            return entityplayer.getDistanceSq(xCoord + 0.5, yCoord + 0.5, zCoord + 0.5) <= 64;
+        }
+
+        
+        
+        
+
      
     }
 

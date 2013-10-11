@@ -2,6 +2,7 @@ package mtshaw113.juli.blocks;
 
 import mtshaw113.juli.items.ItemInfo;
 import mtshaw113.juli.items.JuliIngot;
+import mtshaw113.juli.tileentity.TileEntityJuli;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -36,6 +37,12 @@ public class Blocks
         GameRegistry.registerBlock(birthday, BlockInfo.BIRTHDAY_KEY);
         
 	}
+	
+	public static void registerTileEntities() {
+	    GameRegistry.registerTileEntity(TileEntityJuli.class, BlockInfo.BIRTHDAY_KEY);
+	}
+	
+	
 	
 	
 	public static void addNames() {
