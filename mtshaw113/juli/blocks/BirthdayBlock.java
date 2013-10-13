@@ -33,6 +33,11 @@ public class BirthdayBlock extends BlockContainer {
     public boolean onBlockActivated(final World world, final int x,
             final int y, final int z, EntityPlayer par5EntityPlayer, int par6,
             float par7, float par8, float par9) {
+        
+         if (par5EntityPlayer.worldObj.isRemote) { 
+             par5EntityPlayer.openGui(Juli.instance, 0, world, x, y, z);
+         }
+        
         //if (!world.isRemote) {
         //    if (world.getBlockTileEntity(x, y, z) != null) {
         //        ((TileEntityJuli) world.getBlockTileEntity(x, y, z)).toggleState();

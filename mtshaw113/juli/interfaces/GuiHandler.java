@@ -19,7 +19,7 @@ public class GuiHandler implements IGuiHandler{
     public Object getServerGuiElement(int ID, EntityPlayer player, World world,
             int x, int y, int z) {
         switch (ID) {
-            case 0:
+            case 0: 
                 TileEntity te = world.getBlockTileEntity(x, y, z);
                 if (te != null && te instanceof TileEntityJuli) {
                     return new ContainerBirthdayBlock(player.inventory, (TileEntityJuli)te);
@@ -34,11 +34,7 @@ public class GuiHandler implements IGuiHandler{
             int x, int y, int z) {
         switch (ID) {
             case 0:
-                TileEntity te = world.getBlockTileEntity(x, y, z);
-                if (te != null && te instanceof TileEntityJuli) {
-                    return new GuiBirthdayBlock(player.inventory, (TileEntityJuli)te);
-                }
-                break;
+                return new GuiBirthdayBlock();
         }
         return null;
     }
