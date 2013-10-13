@@ -3,13 +3,15 @@
   "modid": "Juli",
   "name": "Juli's Mod",
   "description": "Happy Birthday Juli!",
-  "version": "alpha",
+  "version": "1.0",
   "mcversion": "1.6.2",
   "logoFile": "",
   "url": "",
   "updateUrl": "",
   "authors": ["Matt"],
-  "credits": "Ryan for some Ideas, Matt for actually making it, VSWE for help with making the mod",
+  "credits": "Ryan for some Ideas, Matt for actually making it,
+   VSWE for help with making the mod
+   various people on #minecraftforge IRC",
   "parent": "",
   "screenshots": [],
   "dependencies": []

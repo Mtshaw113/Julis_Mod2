@@ -2,6 +2,7 @@ package mtshaw113.juli.items;
 
 import java.util.List;
 
+import mtshaw113.juli.Juli;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -19,7 +20,7 @@ public class ItemWand extends Item {
 	
 	public ItemWand(int id) {
 		super(id);
-		setCreativeTab(CreativeTabs.tabCombat);
+		setCreativeTab(Juli.tabCustom);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.WAND_UNLOCALIZED_NAME);
 	}

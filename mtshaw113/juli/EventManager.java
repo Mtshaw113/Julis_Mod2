@@ -34,11 +34,11 @@ public class EventManager implements IWorldGenerator {
  
 
    private void generateSurface(World world, Random random, int chunkX, int chunkZ) {
-      for(int i = 0; i < 9; i++){
+      for(int i = 0; i < 20; i++){
          int xCoord = chunkX + random.nextInt(16);
-         int yCoord = random.nextInt(40);
+         int yCoord = random.nextInt(64);
          int zCoord = chunkZ + random.nextInt(16);        
-         new WorldGenMinable(BlockInfo.ORE_ID,i,random.nextInt(9)).generate(world, random, xCoord, yCoord, zCoord);
+         new WorldGenMinable(BlockInfo.ORE_ID,i,random.nextInt(20)).generate(world, random, xCoord, yCoord, zCoord);
          
       }
       

@@ -2,6 +2,7 @@ package mtshaw113.juli.items;
 
 import java.util.List;
 
+import mtshaw113.juli.Juli;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -18,7 +19,7 @@ public class ItemCard extends Item{
 	
 	public ItemCard(int id) {
 		super(id);
-		setCreativeTab(CreativeTabs.tabMisc);
+		setCreativeTab(Juli.tabCustom);
 		setHasSubtypes(true);
 	}
 	

@@ -29,7 +29,7 @@ public class BlockInfo {
 	    public static int BLOCK_JULI_ID;
 	    public static final String BLOCK_JULI_KEY = "BlockJ";
 	    public static final int BLOCK_JULI_DEFAULT = 2078;
-	    public static final String BLOCK_JULI_ICON = "blockJ";
+	    public static final String BLOCK_JULI_ICON = "blockj";
 	    public static final String BLOCK_JULI_UNLOCALIZED_NAME = "block";
 	    public static final String BLOCK_JULI_NAME = "Juli's Block";
 	    
